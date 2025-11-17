@@ -1,0 +1,12 @@
+package gateway;
+
+import model.Order;
+
+public interface PaymentProcessor {
+    PaymentResult processOrder(Order order);
+}
+
+class PaymentResult {
+    private String status;
+    public PaymentResult(String status) { this.status = status; }
+}
