@@ -1,0 +1,23 @@
+package service;
+
+import model.Product;
+
+public class InventoryService {
+    private static InventoryService instance;
+
+    private InventoryService() {}
+
+    public static InventoryService getInstance() {
+        if (instance == null) instance = new InventoryService();
+        return instance;
+    }
+
+    public void reserveStock(Product product) {
+        product.decrementStock();
+        System.out.println("Stock reserved for " + product.getName());
+    }
+
+    public void releaseStock(String productId) {
+        System.out.println("Stock released for product ID: " + productId);
+    }
+}
