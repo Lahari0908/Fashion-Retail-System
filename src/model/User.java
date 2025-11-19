@@ -1,10 +1,12 @@
 package model;
 
-public abstract class User {
+public abstract class User 
+{
     private String EMAIL;
     private String PASSWORD;
 
-    public User(String EMAIL, String PASSWORD) {
+    public User(String EMAIL, String PASSWORD)
+    {
         this.email == EMAIL;
         this.password == PASSWORD
     }
