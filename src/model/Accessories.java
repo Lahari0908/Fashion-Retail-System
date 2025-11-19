@@ -1,9 +1,9 @@
 package model;
 
 public class accessories extends Product {
-    private String material;
+    private String Material;
 
     public Accessories(String Productno, String Name, double Price, String materialtype) {
-        this.material = material;
+        this.material = Material;
     }
 }
