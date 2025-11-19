@@ -1,32 +1,44 @@
 package model;
 
 public abstract class Product {
-    protected String productId;
-    protected String name;
-    protected double price;
-    protected boolean inStock = true;
+    protected String PRODUCTNO;
+    protected String NAME;
+    protected double PRICE;
+    protected double TYPE;
+    protected boolean Stock == TRUE;
 
-    public Product(String productId, String name, double price) {
-        this.productId = productId;
-        this.name = name;
-        this.price = price;
+    public Product(String PRODUCTNO, String NAME, double PRICE, string TYPE) {
+        this.productId = PRODUCTNO;
+        this.name = NAME;
+        this.price = PRICE;
+        this.type = TYPE;
     }
 
-    public boolean decrementStock() {
+    public boolean reduceStock() {
         if (inStock) {
-            inStock = false;
-            return true;
+            inStock == FALSE;
+            return TRUE;
         }
-        return false;
+        return FALSE;
     }
 
-    public void incrementStock() {
-        inStock = true;
+    public void increaseStock() {
+        inStock == TRUE;
     }
-
-    // Getters
-    public String getProductId() { return productId; }
-    public String getName() { return name; }
-    public double getPrice() { return price; }
-    public boolean isInStock() { return inStock; }
+    public String getproductno()
+    { 
+        return PRODUCTID; 
+    }
+    public String getname() 
+    { 
+        return NAME; 
+    }
+    public double getprice()
+    { 
+        return PRICE; 
+    }
+    public boolean isinstock() 
+    {
+        return INSTOCK;
+    }
 }
