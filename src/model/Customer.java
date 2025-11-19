@@ -1,19 +1,12 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Customer extends User {
-    private List<Order> cart = new ArrayList<>();
 
-    public Customer(String email, String password) {
-        super(email, password);
+    public Customer(String EMAILID, String PASSWORD) {
+        super(EMAILID,PASSWORD);
     }
 
-    public void placeOrder(Order order) {
-        cart.add(order);
-        System.out.println("Order placed by " + getEmail());
-    }
-
-    public List<Order> getCart() { return cart; }
+    public void placeOrder(Order ) {
+        basket.add(order);
+        System.out.println("Ordered by " + getEmail());
 }
