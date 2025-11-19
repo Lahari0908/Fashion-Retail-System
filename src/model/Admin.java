@@ -1,11 +1,11 @@
 package model;
 
 public class Admin extends User {
-    public Admin(String email, String password) {
-        super(email, password);
+    public Admin(StringID EMAILD, String PASSWORD) {
+        super(EMAILID,PASSWORD);
     }
 
-    public void manageInventory() {
-        System.out.println("Admin " + getEmail() + " is managing inventory");
+    public void manageInventory()
+    System.out.println("manages te stock");
     }
 }
