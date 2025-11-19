@@ -7,6 +7,6 @@ public class Customer extends User {
     }
 
     public void placeOrder(Order ) {
-        basket.add(order);
+        cart.add(Order);
         System.out.println("Ordered by " + getEmail());
 }
