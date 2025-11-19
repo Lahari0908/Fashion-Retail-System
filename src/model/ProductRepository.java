@@ -1,17 +1,16 @@
 package repository;
 
 import model.Product;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class ProductRepository {
-    private List<Product> products = new ArrayList<>();
+    private List products = new prodducts;
 
-    public List<Product> findByCategory(String category) {
+    public List findByCategory(String category) {
         return products;
     }
 
-    public void save(Product p) {
-        products.add(p);
+    public void save(Product product) {
+        products.add(product);
     }
 }
