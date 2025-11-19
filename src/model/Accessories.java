@@ -1,10 +1,9 @@
 package model;
 
-public class Accessories extends Product {
+public class accessories extends Product {
     private String material;
 
-    public Accessories(String productId, String name, double price, String material) {
-        super(productId, name, price);
+    public Accessories(String Productno, String Name, double Price, String materialtype) {
         this.material = material;
     }
 }
