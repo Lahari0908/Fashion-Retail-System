@@ -18,18 +18,13 @@ src/
 │   ├── Clothing.java        
 │   ├── Accessories.java     
 │   └── Order.java            
-├── repository/               
-│   ├── OrderRepository.java  
+├── repository/
 │   └── ProductRepository.java 
 ├── service/                 
 │   ├── InventoryService.java 
-│   ├── PaymentService.java   
-│   ├── NotificationService.java 
-│   └── EmailService.java     
+│   ├── PaymentService.java      
 ├── gateway/                 
-│   ├── PaymentProcessor.java    
-│   └── PayPalGateway.java    
-└── MainTest.java            
+│   ├── PaymentProcessor.java               
 ```
 
 ---
@@ -50,8 +45,8 @@ java MainTest
 ## 📊 Expected Output
 ```
 
-textCustomer placed order with total: $700.00
-Inventory for Dress (stock: 99)
+Customer placed order with total: $700.00
+Inventory for Dress (stock: 43)
 Payment authorized via Paypal : Success
 Order status updated: Shipement successful
 Confirmation sent via email.
