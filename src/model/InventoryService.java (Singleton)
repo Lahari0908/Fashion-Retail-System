@@ -3,17 +3,20 @@ package service;
 public class InventoryService {
 private InventoryService() {}
 
-    public static InventoryService getInstance() {
+    public static InventoryService getInstance()
+{
         if (instance == null) instance = new InventoryService();
         return instance;
     }
 
-    public void Stock(Product product) {
+    public void Stock(Product product)
+{
         product.reduceStock();
         System.out.println("Product is booked for " + product.getName());
     }
 
-    public void Stock(String productId) {
-        System.out.println("Product is sent for ": " + productId);
+    public void Stock(String productId) 
+{
+        System.out.println("Product is sent for " + productId);
     }
 }
